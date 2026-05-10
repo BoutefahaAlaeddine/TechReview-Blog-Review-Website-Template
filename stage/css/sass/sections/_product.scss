@@ -1,0 +1,50 @@
+.product {
+  color: var(--dark-color);
+  .imageUser {
+    img {
+      width: 50px;
+    }
+  }
+  .blockquote {
+    background-color: var(--light-color-2);
+    padding: 5px;
+    border-radius: 5px;
+
+    i {
+      font-size: 50px;
+    }
+  }
+  .rtrs-review-wrap{
+    .rtrs-summary {
+      .review-by-class{
+        color: var(--dark-color);
+      }
+      .review-total {
+        color: var(--dark-color);
+  
+      }
+    }
+  }
+  .review-box{
+    font-size: 15px;
+  }
+  .review-comments {
+    ul {
+      .class {
+        width: 120px;
+      }
+      .stars{
+        div{
+          cursor: pointer;
+          color: gold;
+        }
+      }
+    }
+  }
+  .about-author {
+    padding: 5px;
+    background-color: var(--light-color-2);
+    color: var(--dark-color);
+    border-radius: 5px;
+  }
+}

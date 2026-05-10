@@ -1,0 +1,60 @@
+doctype
+html
+ head 
+  include pug/layout/meta.pug
+  include pug/layout/styles.pug
+ body.position-relative  
+    include pug/layout/navbar.pug
+    section.panel.panel-primary.new-product
+        .container.panel-body
+          .row.justify-content-center
+            .col-12.p-5
+              form.form-horizontal.main-form(action='/eCemommerce/newAds.php' method='POST' enctype='multipart/form-data')
+                .form-group.form-group-lg.mb-3.d-flex.flex-wrap
+                   div.col-lg-3.col-12.me-2.custom-file-btn 
+                      label.control-label.label-up(for='file').w-100.h-100.d-flex.justify-content-center.align-items-center
+                        i.fa-solid.fa-box-open
+                        | &nbsp; Product Image
+                      .d-none
+                          input#file(type='file' name='product-image' title='Please Entre a picture of the product' required='required'  value="" accept=' image/*')
+                   div.col-lg-6.col-12
+                      label.control-label.mb-2 Link Video 
+                      input.form-control.live(pattern='.{4,}' title='Enter the YouTube video link if you want' type='text' name='link'   placeholder='Enter The YouTube video Link If You Want' )
+                .form-group.form-group-lg.mb-3
+                  label.control-label.mb-2 Name Product
+                  .col-md-12.col-lg-9
+                    input.form-control.live(pattern='.{4,}' title='This Field Require At Least 4 Characters' type='text' name='product_name'  required='required' placeholder='Name Of Product' )
+                .form-group.form-group-lg.mb-3
+                    label.control-label.mb-2 Category
+                    .col-md-12.col-lg-9
+                      select(name='category' required='').form-control.w-100
+                        option(value='') ...
+                        option(value='1').btn-orange-2 Creative 
+                        option(value='3').btn-green-2 Health
+                        option(value='4').btn-purple-2 Ideas
+                .form-group.form-group-lg.mb-3
+                    label.control-label.mb-2 Tags
+                    .col-md-12.col-lg-9
+                      input.form-control.live(pattern='.{4,}' title='This Field Require At Least 4 Characters' type='text' name='tags'   placeholder='Separate Tags With Comma (,)' )
+                .form-group.form-group-lg.mb-3
+                    label.control-label.mb-2 Note
+                    .col-md-12.col-lg-9
+                      input.form-control.live(pattern='.{4,}' title='This Field Require At Least 4 Characters' type='text' name='note'  required='required' placeholder='Write an important feature of the product' )
+                .form-group.form-group-lg.mb-3
+                    label.control-label.mb-2 Description
+                    .col-md-12.col-lg-9
+                      textarea.form-control.live( pattern='.{20,}' cols="3"  title='This Field Require At Least 20 Characters' type='text' name='desc'  required='required' placeholder='Please Write Descriptions of Product' )
+                .form-group.form-group-lg.mb-3
+                 input(type="submit" value="Save").btn.btn-orange-2.btn-lg.pe-4.ps-4
+                
+            
+             
+    include pug/sections/footer.pug
+    include pug/layout/scripts.pug
+    include pug/layout/scriptsproduct.pug
+    
+
+              
+                
+          
+          

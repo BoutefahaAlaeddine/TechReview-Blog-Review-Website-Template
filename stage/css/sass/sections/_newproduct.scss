@@ -1,0 +1,18 @@
+.new-product {
+  form {
+    label {
+      color: var(--dark-color);
+    }
+    input,
+    select,
+    textarea {
+      border: 1px solid var(--dark-color);
+      &:focus {
+        box-shadow: 0 0 3px 1px var(--dark-color);
+      }
+    }
+    textarea {
+      resize: none;
+    }
+  }
+}

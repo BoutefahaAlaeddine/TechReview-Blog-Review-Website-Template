@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Front-End ultimate practical Course</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/all.min.css"><link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&amp;family=Pattaya&amp;family=Work+Sans:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  </head>
+  <body class="position-relative"> 
+    <div class="upper-nav">
+      <div class="container">
+        <ul class="d-flex justify-content-between list-unstyled"> 
+          <li class="nav-item d-flex align-items-center"><i class="fa-solid fa-sun text-light me-1"></i>
+            <div class="form-check form-switch">
+              <input class="form-check-input" id="flexSwitchCheckDefault" type="checkbox">
+            </div><i class="fa-solid fa-moon text-light"></i>
+          </li>
+          <li class="nav-item">
+            <ul class="nav justify-content-between list-unstyled"> 
+              <li class="nav-item"><a class="nav-link sign-up btn rounded-pill main-btn custom-button" href="#">Sign Up            </a></li>
+              <li class="nav-item"><a class="nav-link sign-up btn rounded-pill main-btn custom-button" href="#">Login </a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <hr class="bg-white m-0">
+    <header class="position-sticky top-0">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container"><a class="navbar-brand" href="#">              <img src="images/logo.png"></a>
+          <button class="navbar-toggler shadow-none border-0 bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse rounded" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 text-center">
+              <li class="nav-item"><a class="nav-link fw-normal active" aria-current="page" href="#" data-scroll="home">Home</a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="popular">Popular</a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="categories">Categories </a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="videos">Videos</a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="latest">Latest</a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="more">More</a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="trending">Trending</a></li>
+              <li class="nav-item"><a class="nav-link fw-normal" href="#" data-scroll="bast">Best</a></li>
+            </ul>
+            <hr class="divider text-light" role="separator">
+            <ul class="navbar-nav mb-2 mb-lg-0 text-center">
+              <li class="nav-item">
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i>       </button>
+                </form>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="panel panel-primary new-product">
+      <div class="container panel-body">
+        <div class="row justify-content-center">
+          <div class="col-12 p-5">
+            <form class="form-horizontal main-form" action="/eCemommerce/newAds.php" method="POST" enctype="multipart/form-data">
+              <div class="form-group form-group-lg mb-3 d-flex flex-wrap">
+                <div class="col-lg-3 col-12 me-2 custom-file-btn"> 
+                  <label class="control-label label-up w-100 h-100 d-flex justify-content-center align-items-center" for="file"><i class="fa-solid fa-box-open"></i>&nbsp; Product Image</label>
+                  <div class="d-none">
+                    <input id="file" type="file" name="product-image" title="Please Entre a picture of the product" required="required" value="" accept=" image/*">
+                  </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                  <label class="control-label mb-2">Link Video </label>
+                  <input class="form-control live" pattern=".{4,}" title="Enter the YouTube video link if you want" type="text" name="link" placeholder="Enter The YouTube video Link If You Want">
+                </div>
+              </div>
+              <div class="form-group form-group-lg mb-3">
+                <label class="control-label mb-2">Name Product</label>
+                <div class="col-md-12 col-lg-9">
+                  <input class="form-control live" pattern=".{4,}" title="This Field Require At Least 4 Characters" type="text" name="product_name" required="required" placeholder="Name Of Product">
+                </div>
+              </div>
+              <div class="form-group form-group-lg mb-3">
+                <label class="control-label mb-2">Category</label>
+                <div class="col-md-12 col-lg-9">
+                  <select class="form-control w-100" name="category" required="">
+                    <option value="">...</option>
+                    <option class="btn-orange-2" value="1">Creative </option>
+                    <option class="btn-green-2" value="3">Health</option>
+                    <option class="btn-purple-2" value="4">Ideas</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group form-group-lg mb-3">
+                <label class="control-label mb-2">Tags</label>
+                <div class="col-md-12 col-lg-9">
+                  <input class="form-control live" pattern=".{4,}" title="This Field Require At Least 4 Characters" type="text" name="tags" placeholder="Separate Tags With Comma (,)">
+                </div>
+              </div>
+              <div class="form-group form-group-lg mb-3">
+                <label class="control-label mb-2">Note</label>
+                <div class="col-md-12 col-lg-9">
+                  <input class="form-control live" pattern=".{4,}" title="This Field Require At Least 4 Characters" type="text" name="note" required="required" placeholder="Write an important feature of the product">
+                </div>
+              </div>
+              <div class="form-group form-group-lg mb-3">
+                <label class="control-label mb-2">Description</label>
+                <div class="col-md-12 col-lg-9">
+                  <textarea class="form-control live" pattern=".{20,}" cols="3" title="This Field Require At Least 20 Characters" type="text" name="desc" required="required" placeholder="Please Write Descriptions of Product"></textarea>
+                </div>
+              </div>
+              <div class="form-group form-group-lg mb-3">
+                <input class="btn btn-orange-2 btn-lg pe-4 ps-4" type="submit" value="Save">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="position-sticky bottom-0">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top">
+          <div class="col mb-3"><a class="d-flex align-items-center mb-3 link-dark text-decoration-none" href="/"><img class="bi me-2" src="images/logo.png" alt="" width="100"></a>
+            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure molestiae ratione.</p>
+            <ul class="list-unstyled d-flex gap-2 links">
+              <li><a class="rounded-circle" href="#"> <i class="fa-brands fa-facebook-f"></i></a></li>
+              <li><a class="rounded-circle" href="#"> <i class="fa-brands fa-instagram"></i></a></li>
+              <li><a class="rounded-circle" href="#"> <i class="fa-brands fa-x-twitter"></i></a></li>
+              <li><a class="rounded-circle" href="#"> <i class="fa-brands fa-pinterest-p"></i></a></li>
+              <li><a class="rounded-circle" href="#"> <i class="fa-brands fa-tiktok"></i></a></li>
+            </ul>
+          </div>
+          <div class="col mb-3"></div>
+          <div class="col mb-3">
+            <h5 class="text-light">About Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">About Us</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Get Support</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Terms Of Use</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">FAQ’S</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-light">Get Support</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Documentation</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Features</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Knowledge Base</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Cookie Preferences</a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col mb-3">
+            <h5 class="text-light">Contact Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#"> <i class="fa-solid fa-house me-2"></i><span>djelfa university zian achor</span></a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#"> <i class="fa-solid fa-phone me-2"></i><span>+213-656-8778</span></a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#"> <i class="fa-solid fa-envelope me-2"></i><span>a@gamil.com</span></a></li>
+              <li class="nav-item mb-2"><a class="nav-link p-0 text-white-50" href="#"> <i class="fa-solid fa-fax me-2"></i><span>+174446646454</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/product.js"></script>
+  </body>
+</html>

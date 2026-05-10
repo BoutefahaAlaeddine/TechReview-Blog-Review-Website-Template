@@ -1,0 +1,56 @@
+.upper-nav{
+  background-color: $dark-color-3;
+  padding: 5px 0;
+  .nav-item{
+    .form-check{
+    .form-check-input:checked{
+         background-color: $dark-color;
+      }
+    }
+  }
+}
+hr{
+  height: 1px;
+}
+header {
+  z-index: 1000;
+  padding: 10px 0;
+  background-color: $dark-color-3;
+
+  nav {
+    .container {
+      .navbar-brand {
+        img {
+          width: 100px;
+        }
+      }
+      #navbarSupportedContent {
+        padding: 20px;
+        @media ($maxSmall) {
+          // background-color: $DarkViolet;
+        }
+      }
+      .navbar-nav {
+        .nav-item {
+          .nav-link {
+            color: $light-color;
+            @include hover("color", $red-color-2);
+            @media ($maxSmall) {
+              @include hover("color", $red-color-2);
+              padding: 16px 0;
+            }
+            &.active{
+              color: $red-color-2;
+            }
+          }
+          .btn-outline-success {
+            color: $red-color-2;
+            border: 1px solid $red-color-2;
+            @include hover("color", $light-color);
+            @include hover("back", $red-color-2);
+          }
+        }
+      }
+    }
+  }
+}

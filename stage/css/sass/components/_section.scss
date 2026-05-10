@@ -1,0 +1,52 @@
+.section {
+  padding: 200px 0;
+  .title {
+    color: var(--dark-color);
+    margin-bottom: 15px;
+    position: relative;
+    font-weight: 600;
+    padding: 5px;
+    &::before {
+      content: "";
+      left: 0;
+      top: 50%;
+      height: 48%;
+      width: 4px;
+      position: absolute;
+      transform: translateY(-50%);
+      background-color: $red-color-2;
+    }
+  }
+  .card {
+    background-color: var(--light-color-2) !important;
+    border: none;
+    box-shadow: 1px 3px 10px 1px rgb(0 0 0 / 5%);
+    margin-bottom: 7px;
+    .card-body {
+      color: var(--dark-color);
+      a {
+        text-decoration: none;
+        transition: $transition;
+        @include hover("color", $orange-color-1);
+      
+    }
+    }
+
+    .card-info {
+      .card-title {
+        font-weight: 600;
+        font-size: 20px;
+        
+      }
+      .card-text {
+        font-size: 14px;
+        font-weight: 500;
+      }
+    }
+  }
+  .stars {
+    i {
+      color: $yellow-color-1;
+    }
+  }
+}

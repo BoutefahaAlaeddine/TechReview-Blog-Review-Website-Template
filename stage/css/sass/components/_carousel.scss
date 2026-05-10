@@ -1,0 +1,30 @@
+.thumbnails {
+  .carousel {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    border-radius: 8px;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    .no-transition {
+      scroll-behavior: auto;
+    }
+    .dragging {
+      scroll-snap-type: none;
+      scroll-behavior: auto;
+    }
+    &.dragging {
+      .card {
+        cursor: grab;
+        user-select: none;
+      }
+    }
+  }
+  .card {
+    scroll-snap-align: start;
+    cursor: pointer;
+     transition: all 0.4s ease-in-out;
+  }
+}

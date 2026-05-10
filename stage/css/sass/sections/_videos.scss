@@ -1,0 +1,71 @@
+.videos {
+  background-color: $dark-color-3;
+  .title {
+    width: fit-content;
+  }
+  .gallery {
+    width: 80%;
+    @media ($maxSmall) {
+      width: 100%;
+    }
+    margin:100px auto ;
+    .master-img {
+      border-radius: 10px;
+
+      img {
+        width: 100%;
+      }
+      .card-info {
+        left: 15px;
+        bottom: 15px;
+        position: absolute;
+        .card-title{
+          font-size:30px;
+          color: #fff;
+            text-decoration: none;
+            transition: $transition;
+            @include hover("color", $orange-color-1)
+        }
+        .card-text{
+          font-size:20px;
+        }
+      }
+    }
+    .thumbnails {
+      .carousel {
+        .card-info {
+          .card-body {
+            .card-title{
+              font-size: 14px;
+            }
+            & > div {
+              flex-direction: column;
+            }
+            .card-text{
+              display: none;
+            }  
+          }
+        }
+
+        li {
+          padding: 0;
+          .card {
+            cursor: pointer;
+            padding: 0;
+            opacity: 0.6;
+            border: 3px solid black;
+            &:nth-child(5) {
+              border: 3px solid #ad1f10;
+              opacity: 1;
+            }
+            img {
+              width: 100%;
+            }
+          }
+        }
+
+    
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.upper-nav
+  .container
+    ul.d-flex.justify-content-between.list-unstyled 
+            li.nav-item.d-flex.align-items-center
+              i.fa-solid.fa-sun.text-light.me-1
+              .form-check.form-switch
+                input#flexSwitchCheckDefault.form-check-input(type='checkbox')
+              i.fa-solid.fa-moon.text-light
+            li.nav-item
+              ul.nav.justify-content-between.list-unstyled  
+                  li.nav-item
+                    a.nav-link.sign-up.btn.rounded-pill.main-btn.custom-button(href='#') Sign Up            
+                  li.nav-item
+                    a.nav-link.sign-up.btn.rounded-pill.main-btn.custom-button(href='#') Login 
+hr.bg-white.m-0 
+header.position-sticky.top-0
+  nav.navbar.navbar-expand-lg.navbar-light
+    .container
+      a.navbar-brand(href='#')               
+       img(src="images/logo.png")
+      button.navbar-toggler.shadow-none.border-0.bg-white(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse.rounded
+        ul.navbar-nav.me-auto.mb-2.mb-lg-0.text-center
+          li.nav-item
+            a.nav-link.fw-normal.active(aria-current='page' href='#' data-scroll="home") Home
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="popular") Popular
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="categories") Categories 
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="videos") Videos
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="latest") Latest
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="more") More
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="trending") Trending
+          li.nav-item
+            a.nav-link.fw-normal(href='#' data-scroll="bast") Best
+        hr.divider.text-light(role='separator')      
+        ul.navbar-nav.mb-2.mb-lg-0.text-center
+          li.nav-item
+            form.d-flex
+                input.form-control.me-2(type='search' placeholder='Search' aria-label='Search')
+                button.btn.btn-outline-success(type='submit') <i class="fa-solid fa-magnifying-glass"></i>       
+
+      

@@ -1,0 +1,60 @@
+.custom-button {
+  margin-right: 5px;
+  @include button($red-color-1,"",$red-color-1);
+  @include hover("back", $red-color-2);
+  @include hover("color", $light-color);
+}
+.custom-file-btn{
+  background-color: var(--dark-color);
+  label{
+    color: var(--light-color) !important;;
+
+  }
+  border-radius: 5px;
+  padding: 10px;
+} 
+
+.btn-purple-1{
+  @include button($purple-color-1,$purple-color-2,$light-color);
+}
+.btn-purple-2{
+  @include button($light-color,$purple-color-1,$purple-color-1);
+}
+
+.btn-pink-1{
+  @include button($pink-color-1,$pink-color-2,$light-color);
+}
+.btn-pink-2{
+  @include button($light-color,$pink-color-1,$pink-color-1);
+  
+}
+
+.btn-green-1{
+  @include button($green-color-1,$green-color-2,$light-color);
+}
+
+.btn-green-2{
+  @include button($light-color,$green-color-1,$green-color-1);
+}
+
+.text-travel{
+  @include hover("color", $orange-color-2);
+}
+
+.btn-orange-1{
+  @include button($orange-color-1,$orange-color-2,$light-color);
+}
+.text-creative{
+  @include hover("color", $orange-color-2);
+}
+.btn-orange-2{
+  @include button($light-color,$orange-color-1,$orange-color-1);
+}
+
+.btn-orange-3{
+  @include button($orange-color-3,$orange-color-4,$light-color);
+  
+}
+.btn-orange-4{
+  @include button($light-color,$orange-color-3,$orange-color-3);
+}

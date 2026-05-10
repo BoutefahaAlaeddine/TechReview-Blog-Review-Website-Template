@@ -1,0 +1,11 @@
+.img-scale {
+  overflow: hidden;
+  display: block;
+  img {
+    transition: $transition ease-in-out;
+  }
+  &:hover img {
+    transform: scale(1.2, 1.2);
+  }
+}
+

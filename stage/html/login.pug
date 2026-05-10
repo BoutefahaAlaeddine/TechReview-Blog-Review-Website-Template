@@ -1,0 +1,30 @@
+doctype
+html
+ head 
+  include pug/layout/meta.pug
+  include pug/layout/styles.pug
+ body.position-relative  
+    include pug/layout/navbar.pug
+    section.gradient-custom.login
+      .container.py-5
+        .row.d-flex.justify-content-center.align-items-center
+          .col-12.col-md-8.col-lg-6.col-xl-5
+            .card(style='border-radius: 1rem;')
+              .card-body.p-5.text-center
+                .mb-md-5.mt-md-4.pb-5
+                  h2.fw-bold.mb-2.text-uppercase Login
+                  p-50.mb-5 Please enter your email and password!
+                  .form-outline.form-white.mb-4.pt-2(data-mdb-input-init='')
+                    input#typeEmailX.form-control.form-control-lg(type='email' placeholder="Entre Email")
+                  .form-outline.form-white.mb-4(data-mdb-input-init='')
+                    input#typePasswordX.form-control.form-control-lg(type='password' placeholder="Entre Password")
+                  button.btn.btn-outline-light.btn-lg.px-5(data-mdb-button-init='' data-mdb-ripple-init='' type='submit') Login
+                div
+                  p.mb-0
+                    | Don&apos;t have an account? 
+                    a-50.fw-bold(href='#!') Sign Up
+
+       
+    include pug/sections/footer.pug
+    include pug/layout/scripts.pug
+    

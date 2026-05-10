@@ -1,0 +1,14 @@
+.login {
+  color: var(--light-color);
+  .card{
+    background-color: var(--dark-color);
+    color: var(--light-color) !important;
+  a  {
+      color: var( --light-color-2) !important;
+    }
+    button{
+      background-color: var( --light-color-2);
+      color: var(--dark-color);
+    }
+  }
+}
