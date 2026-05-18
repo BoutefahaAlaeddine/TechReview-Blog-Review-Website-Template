@@ -1,6 +1,6 @@
 # TechReview — Blog & Review Website Template
 
-> A feature-rich, multi-page **Tech Blog & Review** website template built with a full **Gulp 4** automation pipeline, **Pug** templating engine, and **SASS/SCSS**. Features a fully separated `stage/` source and `dist/` production output, a Node.js local server with **LiveReload**, a built-in **Dark/Light mode** with localStorage persistence, dynamic **Star Rating** system, and a rich library of reusable SASS mixins.
+🌐 Websites. A feature-rich, multi-page **Tech Blog & Review** website template built with a full **Gulp 4** automation pipeline, **Pug** templating engine, and **SASS/SCSS**. Features a fully separated `stage/` source and `dist/` production output, a Node.js local server with **LiveReload**, a built-in **Dark/Light mode** with localStorage persistence, dynamic **Star Rating** system, and a rich library of reusable SASS mixins.
 
 ---
 
